@@ -114,7 +114,7 @@ public class ConsoleManager
     }
 
     // Helper method to get integer input from the user
-    private int GetInputInt(string prompt = "")
+    public int GetInputInt(string prompt = "")
     {
         Console.Write(prompt);
         int input;
@@ -126,7 +126,7 @@ public class ConsoleManager
     }
 
     // Helper method to get double input from the user
-    private double GetInputDouble(string prompt = "")
+    public double GetInputDouble(string prompt = "")
     {
         Console.Write(prompt);
         double input;

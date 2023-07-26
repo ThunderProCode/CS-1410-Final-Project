@@ -123,8 +123,7 @@ public class RestaurantApp
     private void PayForOrder()
     {
         Console.Write("Enter the Order ID to pay for: ");
-        int orderId = GetInputInt();
-
+        int orderId = consoleManager.GetInputInt();
         Order order = orders.FirstOrDefault(o => o.OrderId == orderId);
         if (order != null)
         {
@@ -146,7 +145,7 @@ public class RestaurantApp
     private void TrackOrderStatus()
     {
         Console.Write("Enter the Order ID to track status: ");
-        int orderId = GetInputInt();
+        int orderId = consoleManager.GetInputInt();
 
         Order order = orders.FirstOrDefault(o => o.OrderId == orderId);
         if (order != null)
@@ -166,18 +165,6 @@ public class RestaurantApp
         }
     }
 
-    // Helper method to get integer input from the user
-    private int GetInputInt(string prompt = "")
-    {
-        Console.Write(prompt);
-        int input;
-        while (!int.TryParse(Console.ReadLine(), out input))
-        {
-            Console.Write("Invalid input. Please enter a valid number: ");
-        }
-        return input;
-    }
-
     private void AddMenuItem()
     {
         MenuItemFactory menuItemFactory = new MenuItemFactory(restaurantMenu);
@@ -189,8 +176,7 @@ public class RestaurantApp
         string description = Console.ReadLine();
 
         Console.Write("Enter the Price of the new menu item: ");
-        double price = GetInputDouble();
-
+        double price = consoleManager.GetInputDouble();
         MenuItem newItem = menuItemFactory.CreateMenuItem(name, description, price);
         restaurantMenu.AddMenuItem(newItem);
         Console.WriteLine("Menu item added successfully.");
@@ -201,7 +187,7 @@ public class RestaurantApp
         restaurantMenu.DisplayMenu();
 
         Console.Write("Enter the Id of the menu item to update: ");
-        int itemId = GetInputInt();
+        int itemId = consoleManager.GetInputInt();
 
         MenuItem existingItem = restaurantMenu.Items.FirstOrDefault(item => item.Id == itemId);
         if (existingItem != null)
@@ -217,7 +203,7 @@ public class RestaurantApp
             Console.WriteLine("3. Price");
             Console.WriteLine("4. Cancel");
 
-            int option = GetInputInt("Enter option number: ");
+            int option = consoleManager.GetInputInt("Enter option number:");
 
             switch (option)
             {
@@ -231,7 +217,7 @@ public class RestaurantApp
                     break;
                 case 3:
                     Console.Write("Enter the new Price of the menu item: ");
-                    existingItem.Price = GetInputDouble();
+                    existingItem.Price = consoleManager.GetInputDouble();
                     break;
                 case 4:
                     Console.WriteLine("Update canceled.");
@@ -255,7 +241,7 @@ public class RestaurantApp
         restaurantMenu.DisplayMenu();
 
         Console.Write("Enter the Id of the menu item to remove: ");
-        int itemId = GetInputInt();
+        int itemId = consoleManager.GetInputInt();
 
         MenuItem itemToRemove = restaurantMenu.Items.FirstOrDefault(item => item.Id == itemId);
         if (itemToRemove != null)
@@ -284,18 +270,6 @@ public class RestaurantApp
             order.DisplayOrderDetails();
             Console.WriteLine("=======================");
         }
-    }
-
-    // Helper method to get double input from the user
-    private double GetInputDouble(string prompt = "")
-    {
-        Console.Write(prompt);
-        double input;
-        while (!double.TryParse(Console.ReadLine(), out input))
-        {
-            Console.Write("Invalid input. Please enter a valid number: ");
-        }
-        return input;
     }
 
 }
