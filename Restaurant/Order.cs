@@ -1,7 +1,7 @@
 [Serializable]
 public class Order
 {
-     private static int nextOrderId = 1; // Keep track of the next available order ID
+     private static int nextOrderId = 0; // Keep track of the next available order ID
     public int OrderId { get; set; }
     public List<MenuItem> OrderedItems { get; private set; }
     public double TotalAmount { get; private set; }
