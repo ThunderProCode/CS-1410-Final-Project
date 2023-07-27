@@ -13,3 +13,6 @@ C:\Users\hecto\OneDrive\Documents\2023 Summer Semester\OOP\FinalProjectFiles\Fin
 C:\Users\hecto\OneDrive\Documents\2023 Summer Semester\OOP\FinalProjectFiles\FinalProject\obj\Debug\net7.0\FinalProject.pdb
 C:\Users\hecto\OneDrive\Documents\2023 Summer Semester\OOP\FinalProjectFiles\FinalProject\obj\Debug\net7.0\FinalProject.genruntimeconfig.cache
 C:\Users\hecto\OneDrive\Documents\2023 Summer Semester\OOP\FinalProjectFiles\FinalProject\obj\Debug\net7.0\ref\FinalProject.dll
+C:\Users\hecto\OneDrive\Documents\2023 Summer Semester\OOP\FinalProjectFiles\FinalProject\bin\Debug\net7.0\Restaurant.dll
+C:\Users\hecto\OneDrive\Documents\2023 Summer Semester\OOP\FinalProjectFiles\FinalProject\bin\Debug\net7.0\Restaurant.pdb
+C:\Users\hecto\OneDrive\Documents\2023 Summer Semester\OOP\FinalProjectFiles\FinalProject\obj\Debug\net7.0\FinalProject.csproj.CopyComplete

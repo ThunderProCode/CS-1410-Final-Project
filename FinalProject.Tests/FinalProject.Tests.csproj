@@ -19,6 +19,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\FinalProject\FinalProject.csproj" />
+    <ProjectReference Include="..\Restaurant\Restaurant.csproj" />
   </ItemGroup>
 
 </Project>

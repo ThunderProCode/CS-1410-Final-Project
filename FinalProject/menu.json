@@ -1,1 +1,1 @@
-{"Items":[{"Id":2,"Name":"Cheese Burger","Description":"A delicious burger","Price":3},{"Id":3,"Name":"Banana Split","Description":"Bananas and Icecream","Price":8}],"nextItemId":3}
+{"Items":[{"Id":2,"Name":"CheeseBurger","Description":"A delicious Burger","Price":3}],"nextItemId":2}

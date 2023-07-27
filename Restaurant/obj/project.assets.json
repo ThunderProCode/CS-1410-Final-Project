@@ -1,30 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {
-      "Restaurant/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "compile": {
-          "bin/placeholder/Restaurant.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Restaurant.dll": {}
-        }
-      }
-    }
+    "net7.0": {}
   },
-  "libraries": {
-    "Restaurant/1.0.0": {
-      "type": "project",
-      "path": "../Restaurant/Restaurant.csproj",
-      "msbuildProject": "../Restaurant/Restaurant.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    "net7.0": [
-      "Restaurant >= 1.0.0"
-    ]
+    "net7.0": []
   },
   "packageFolders": {
     "C:\\Users\\hecto\\.nuget\\packages\\": {}
@@ -32,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hecto\\OneDrive\\Documents\\2023 Summer Semester\\OOP\\FinalProjectFiles\\FinalProject\\FinalProject.csproj",
-      "projectName": "FinalProject",
-      "projectPath": "C:\\Users\\hecto\\OneDrive\\Documents\\2023 Summer Semester\\OOP\\FinalProjectFiles\\FinalProject\\FinalProject.csproj",
+      "projectUniqueName": "C:\\Users\\hecto\\OneDrive\\Documents\\2023 Summer Semester\\OOP\\FinalProjectFiles\\Restaurant\\Restaurant.csproj",
+      "projectName": "Restaurant",
+      "projectPath": "C:\\Users\\hecto\\OneDrive\\Documents\\2023 Summer Semester\\OOP\\FinalProjectFiles\\Restaurant\\Restaurant.csproj",
       "packagesPath": "C:\\Users\\hecto\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hecto\\OneDrive\\Documents\\2023 Summer Semester\\OOP\\FinalProjectFiles\\FinalProject\\obj\\",
+      "outputPath": "C:\\Users\\hecto\\OneDrive\\Documents\\2023 Summer Semester\\OOP\\FinalProjectFiles\\Restaurant\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\hecto\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -52,11 +33,7 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {
-            "C:\\Users\\hecto\\OneDrive\\Documents\\2023 Summer Semester\\OOP\\FinalProjectFiles\\Restaurant\\Restaurant.csproj": {
-              "projectPath": "C:\\Users\\hecto\\OneDrive\\Documents\\2023 Summer Semester\\OOP\\FinalProjectFiles\\Restaurant\\Restaurant.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
